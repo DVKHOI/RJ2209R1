@@ -1,0 +1,122 @@
+.form {
+  width: 500px;
+  background-color: white;
+  margin: 50px auto;
+  padding: 20px 30px;
+  border: 0;
+  box-shadow: rgba(100, 100, 111, 0.4) 10px 17px 29px 10px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-input {
+  margin-bottom: 20px;
+}
+.input {
+  width: 100%;
+  padding: 10px 20px;
+  color: #333;
+  border: 1px solid #999;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 8px;
+}
+.input:focus {
+  border: 1px solid greenyellow;
+}
+.result {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.btn {
+  padding: 10px 25px;
+  color: white;
+  background-image: linear-gradient(to right, #609fc1, #f8678a);
+  display: inline-block;
+  width: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-radius: 8px;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-delete {
+  display: inline-block;
+  padding: 5px 25px;
+  background-color: red;
+  color: #999;
+  margin: 10px 0;
+  font-size: 20px;
+}
+.alert-main {
+  width: 500px;
+  height: 300px;
+  padding: 15px 20px;
+  margin: 25px auto;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 8px;
+}
+.alert-title {
+  display: inline-block;
+  width: 100%;
+  color: #333;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+.alert-btn {
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 10px auto;
+  border: 0;
+  background-image: linear-gradient(to right, #609fc1, #705af3);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 4px;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alert-text {
+  width: 500px;
+  margin: 50px auto;
+  text-align: center;
+}
+.login {
+  font-size: 32px;
+  display: block;
+  padding: 5px 15px;
+  margin: 25px auto;
+}
+.btn-login {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: #999;
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  font-size: 24px;
+}
+button {
+  padding: 5px 15px;
+  border: 1px solid #eee;
+  margin: 10px;
+}
+.input-text {
+  width: 100%;
+  max-width: 200px;
+  height: 30px;
+  border: 0;
+  padding: 5px 15px;
+}
