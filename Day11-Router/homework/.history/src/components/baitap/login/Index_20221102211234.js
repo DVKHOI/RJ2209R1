@@ -7,13 +7,9 @@ const Index = () => {
     <BrowserRouter>
       <Routes>
         <Route
-          path="/"
+          path="/login"
           element={
-            <Link
-              class="nav-link"
-              className="p-3 mx-[50%] -translate-x-2/4 text-white rounded-lg  flex items-center justify-center w-[250px] bg-blue-500"
-              to="/login"
-            >
+            <Link class="nav-link" to="/">
               Login
             </Link>
           }

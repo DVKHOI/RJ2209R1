@@ -19,7 +19,7 @@ const Login = () => {
     e.preventDefault();
     if (form.account === "admin@gmail.com" && form.password === "1") {
       navigate("/home", {
-        state: { form },
+        state: { accountID: form.account, passwordID: form.password },
       });
     } else {
       alert("Login failed");
@@ -59,7 +59,7 @@ const Login = () => {
         </div>
         <div>
           <button
-            className="w-[200px] text-white  p-2 bg-blue-500 rounded-lg mt-3"
+            className="w-[200px] text-white  p-2 bg-purple-500 rounded-lg mt-3"
             type="submit"
           >
             Login

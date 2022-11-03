@@ -23,7 +23,7 @@ const Employees = () => {
   const navigate = useNavigate();
   const handleSubmit = (index) => {
     navigate("/employeesDetail", {
-      state: employees[index],
+      state: employees,
     });
   };
 
@@ -60,7 +60,7 @@ const Employees = () => {
                   className="w-full max-w-[70px] text-white bg-purple-500 p-2 rounded-md mt-2 mr-2"
                   onClick={(e) => handleSubmit(index)}
                 >
-                  Detail
+                  Edit
                 </button>
               </td>
             </tr>

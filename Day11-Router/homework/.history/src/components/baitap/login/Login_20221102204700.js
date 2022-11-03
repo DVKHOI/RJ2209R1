@@ -59,7 +59,7 @@ const Login = () => {
         </div>
         <div>
           <button
-            className="w-[200px] text-white  p-2 bg-blue-500 rounded-lg mt-3"
+            className="w-[200px] text-white  p-2 bg-purple-500 rounded-lg mt-3"
             type="submit"
           >
             Login

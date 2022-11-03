@@ -3,7 +3,6 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 const Home = () => {
   const { state } = useLocation();
-  console.log("🚀 ~ file: Home.js ~ line 6 ~ Home ~ state", state);
   const navigate = useNavigate();
   return (
     <div className="overflow-x-auto relative w-full max-w-[500px] mx-auto mt-5">
@@ -20,8 +19,8 @@ const Home = () => {
         </thead>
         <tbody>
           <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-            <td className="px-6 py-4">{state.form.account}</td>
-            {/* <td className="px-6 py-4">{state.form.password}</td> */}
+            <td className="px-6 py-4">{state.account}</td>
+            {/* <td className="px-6 py-4">{state.passwordID}</td> */}
           </tr>
         </tbody>
       </table>

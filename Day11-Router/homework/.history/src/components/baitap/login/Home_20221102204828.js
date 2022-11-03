@@ -20,8 +20,8 @@ const Home = () => {
         </thead>
         <tbody>
           <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-            <td className="px-6 py-4">{state.form.account}</td>
-            {/* <td className="px-6 py-4">{state.form.password}</td> */}
+            <td className="px-6 py-4">{form.account}</td>
+            {/* <td className="px-6 py-4">{state.passwordID}</td> */}
           </tr>
         </tbody>
       </table>

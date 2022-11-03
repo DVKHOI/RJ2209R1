@@ -17,9 +17,9 @@ const Login = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (form.account === "admin@gmail.com" && form.password === "1") {
+    if (form.account === "admin@gmail.com" && form.password === "letmein") {
       navigate("/home", {
-        state: { form },
+        state: { accountID: form.account, passwordID: form.password },
       });
     } else {
       alert("Login failed");
@@ -27,7 +27,7 @@ const Login = () => {
   };
   return (
     <div className="p-5 w-full max-w-[500px] mx-auto">
-      <h1 className="mb-5 text-2xl font-semibold text-center">Login</h1>
+      <h1 className="font-semibold text-2xl text-center mb-5">Login</h1>
       <form
         action=""
         onSubmit={handleSubmit}
@@ -36,7 +36,7 @@ const Login = () => {
         <div className="flex flex-col gap-2">
           <label htmlFor="account">Account</label>
           <input
-            className="w-full p-2 mb-4 border border-gray-200 rounded-lg"
+            className="p-2 w-full border border-gray-200 rounded-lg mb-4"
             type="text"
             name="account"
             value={form.account || ""}
@@ -48,7 +48,7 @@ const Login = () => {
         <div className="flex flex-col ">
           <label htmlFor="password">Password</label>
           <input
-            className="w-full p-2 border border-gray-200 rounded-lg"
+            className="p-2 w-full border border-gray-200 rounded-lg"
             type="password"
             name="password"
             value={form.password || ""}
@@ -59,7 +59,7 @@ const Login = () => {
         </div>
         <div>
           <button
-            className="w-[200px] text-white  p-2 bg-blue-500 rounded-lg mt-3"
+            className="w-[200px] text-white  p-2 bg-purple-500 rounded-lg mt-3"
             type="submit"
           >
             Login
