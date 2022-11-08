@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+.wrapper {
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #56baed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formContent {
+  background-color: #fff;
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+.title {
+  text-align: center;
+}
+.formControl {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 50px;
+  background-color: #fff;
+}
+.formInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: relative;
+}
+.input {
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #f6f6f6;
+  margin-top: 5px;
+  border: 1px solid #999;
+  transition: 0.25s ease;
+  outline: none;
+  margin-bottom: 10px;
+}
+.input:focus {
+  border-color: #56baed;
+}
+.lable {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 13px;
+  color: #999;
+  pointer-events: none;
+}
+.input:not(:placeholder-shown) + .lable,
+.input:focus + .lable {
+  display: inline-block;
+  padding: 0 10px;
+  top: 0;
+  background-color: #f6f6f6;
+  transition: 0.25s ease;
+}
+.button {
+  padding: 10px 30px;
+  border: none;
+  background-color: #56baed;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 999px;
+  display: block;
+  margin: 0 auto;
+}

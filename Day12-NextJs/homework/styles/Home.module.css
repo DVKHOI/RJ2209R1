@@ -1,0 +1,10 @@
+.wrapper {
+  width: 800px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tr {
+  text-align: center;
+}
