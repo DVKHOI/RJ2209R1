@@ -14,6 +14,7 @@ const Contact = () => {
     axios
       .get(url)
       .then((res) => {
+        console.log(res.data);
         setContactList(res.data);
       })
       .catch((err) => {
@@ -79,6 +80,7 @@ const Contact = () => {
                     <td className="flex-row items-center justify-start px-6 py-2 gap-x-2 d-flex">
                       <img
                         src={item.img.Url}
+                        // src=""
                         alt="error"
                         className="w-10 h-10 bg-blue-400 rounded-full"
                       />

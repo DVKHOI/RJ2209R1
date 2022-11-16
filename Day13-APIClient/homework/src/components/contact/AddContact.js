@@ -10,7 +10,7 @@ const AddContact = () => {
     name: "",
     email: "",
     phone: "",
-    image: "",
+    img: "",
   });
   const navigate = useNavigate();
 
@@ -24,7 +24,6 @@ const AddContact = () => {
     name: Yup.string().max(100).required(),
     email: Yup.string().email().required(),
     phone: Yup.number().required(),
-    // image: Yup.string().url(),
   });
   const handleSubmission = (e) => {
     const fd = new FormData();
@@ -34,9 +33,8 @@ const AddContact = () => {
       .then((res) => {
         setForm({
           ...form,
-          image: res.data,
+          img: res.data,
         });
-        console.log(form);
       })
       .catch((err) => {
         console.log(err);
@@ -62,7 +60,6 @@ const AddContact = () => {
         <Form className="w-full max-w-[500px] my-5 mx-auto" autoComplete="off">
           <div className="flex flex-row items-center mb-3 gap-x-3">
             <img
-              // src={imgData.Url}
               src={form.img.Url}
               alt=""
               className="avatar rounded-circle me-4"
@@ -74,11 +71,6 @@ const AddContact = () => {
               onChange={handleSubmission}
               className="custom-file-input"
             ></Field>
-            <ErrorMessage
-              component="div"
-              name="image"
-              className="text-sm text-red-500"
-            ></ErrorMessage>
           </div>
           <div className="flex flex-col mb-3">
             <label

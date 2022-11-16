@@ -27,7 +27,6 @@ const EditContact = () => {
     name: Yup.string().max(100).required(),
     email: Yup.string().email().required(),
     phone: Yup.number().required(),
-    // image: Yup.string().url().required(),
   });
   const handleEditContact = (values) => {
     axios
@@ -40,6 +39,22 @@ const EditContact = () => {
         console.log(error);
       });
   };
+  const handleSubmission = (e) => {
+    const fd = new FormData();
+    fd.append("file", e.target.files[0]);
+    axios
+      .post("https://v2.convertapi.com/upload", fd)
+      .then((res) => {
+        setForm({
+          ...form,
+          img: res.data,
+        });
+        console.log(form);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   return (
     <div>
       <Formik
@@ -49,6 +64,24 @@ const EditContact = () => {
         onSubmit={handleEditContact}
       >
         <Form className="w-full max-w-[500px] my-5 mx-auto" autoComplete="off">
+          <div className="flex flex-row items-center mb-3 gap-x-3">
+            {form.img ? (
+              <img
+                src={form.img.Url}
+                alt=""
+                className="avatar rounded-circle me-4"
+              />
+            ) : (
+              <img src={""} alt="" className="avatar rounded-circle me-4" />
+            )}
+            <Field
+              type="file"
+              name="img"
+              value={""}
+              onChange={handleSubmission}
+              className="custom-file-input"
+            ></Field>
+          </div>
           <div className="flex flex-col mb-3">
             <label
               htmlFor="name"
