@@ -21,11 +21,11 @@ const ShowPosts = () => {
       })
       .catch((err) => console.log(err));
   }, [dispatch]);
-  const goToAddPost = () => {
+  const handleAddPost = () => {
     dispatch({ type: ADD, payload: { mode: "ADD" } });
     navigate("/addeditpost");
   };
-  const goToEditPost = (e) => {
+  const handleUpdatePost = (e) => {
     dispatch({ type: EDIT, payload: { mode: "EDIT", data: e } });
     navigate("/addeditpost");
   };
@@ -34,7 +34,7 @@ const ShowPosts = () => {
       <h1 className="text-center text-danger">ShowPosts</h1>
       <div className="d-flex justify-content-between mt-3 border rounded-2 p-3 align-middle">
         <h4 className="fw-bold">Post</h4>
-        <button className="btn btn-success" onClick={goToAddPost}>
+        <button className="btn btn-success" onClick={handleAddPost}>
           Add new Post
         </button>
       </div>
@@ -45,7 +45,7 @@ const ShowPosts = () => {
             <p className="w-75 m-0">{post.body}</p>
             <button
               className="btn btn-primary px-5"
-              onClick={() => goToEditPost(post)}
+              onClick={() => handleUpdatePost(post)}
             >
               Edit
             </button>
