@@ -1,0 +1,203 @@
+{
+  "user": [
+    {
+      "id": 2,
+      "name": "Jennie Six",
+      "birthday": "2022-11-05"
+    },
+    {
+      "id": 3,
+      "name": "Harry",
+      "birthday": "2022-11-01"
+    },
+    {
+      "id": 5,
+      "name": "Ben",
+      "birthday": "2022-11-06"
+    },
+    {
+      "name": "Cam Tu",
+      "birthday": "2022-11-09",
+      "id": 8
+    },
+    {
+      "name": "Nguyen Thi Cam Tu",
+      "birthday": "2022-11-03",
+      "id": 9
+    },
+    {
+      "name": "Vinh Khoi 123",
+      "birthday": "2022-11-04",
+      "id": 10
+    }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "title": "Lorem ipsum dolor sit amet",
+      "user_id": 1
+    },
+    {
+      "id": 2,
+      "title": "Lorem ipsum dolor sit amet",
+      "user_id": 1
+    },
+    {
+      "id": 3,
+      "title": "Lorem ipsum dolor sit amet",
+      "user_id": 2
+    },
+    {
+      "id": 4,
+      "title": "Lorem ipsum dolor sit amet",
+      "user_id": 3
+    },
+    {
+      "id": 5,
+      "title": "Lorem ipsum dolor sit amet",
+      "user_id": 4
+    }
+  ],
+  "todos": [
+    {
+      "userId": 1,
+      "id": 1,
+      "title": "delectus aut autem",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "title": "quis ut nam facilis et officia qui",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 3,
+      "title": "fugiat veniam minus",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 4,
+      "title": "et porro tempora",
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 5,
+      "title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
+      "completed": false
+    },
+    {
+      "title": "khoiaaaaaaaaaaa",
+      "id": 6
+    },
+    {
+      "title": "new todo list",
+      "id": 7
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "book number one",
+      "quantity": "101"
+    },
+    {
+      "id": 2,
+      "title": "book number two",
+      "quantity": "1001"
+    },
+    {
+      "title": "Sach Giao Khoa",
+      "quantity": "1000",
+      "id": 4
+    }
+  ],
+  "contact": [
+    {
+      "name": "Fifa Online 4",
+      "email": "fifa@gmail.com",
+      "phone": "12345789",
+      "img": {
+        "FileName": "TLaMP.jpg",
+        "FileExt": "jpg",
+        "FileSize": 187801,
+        "FileId": "o9jib4jl0z7ct4zo46806azppv9qtxwy",
+        "Url": "https://v2.convertapi.com/d/o9jib4jl0z7ct4zo46806azppv9qtxwy"
+      },
+      "id": 4
+    },
+    {
+      "name": "Dinh Vinh Khoi",
+      "email": "dinhvinhkhoi@gmail.com",
+      "phone": "1324878",
+      "img": {
+        "FileName": "284459870_3659291034297295_5729192054162722926_n (1).jpg",
+        "FileExt": "jpg",
+        "FileSize": 157110,
+        "FileId": "ipn8pgp48qyj4jb2suafxqixpi6rbd1k",
+        "Url": "https://v2.convertapi.com/d/ipn8pgp48qyj4jb2suafxqixpi6rbd1k"
+      },
+      "id": 5
+    },
+    {
+      "name": "Jonh",
+      "email": "jonh@gmail.com",
+      "phone": "8426975138",
+      "img": {
+        "FileName": "Air-Jordan-9-Fire-Red-Release-AIO-Bot.jpg",
+        "FileExt": "jpg",
+        "FileSize": 86284,
+        "FileId": "6qbamt0f83ojqux7d4a62loks2zmiv17",
+        "Url": "https://v2.convertapi.com/d/6qbamt0f83ojqux7d4a62loks2zmiv17"
+      },
+      "id": 6
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "iPad 4 Mini",
+      "price": 500.01,
+      "inventory": 2
+    },
+    {
+      "id": 2,
+      "title": "T-Shirt White",
+      "price": 10.99,
+      "inventory": 10
+    },
+    {
+      "id": 3,
+      "title": "iphone 12 pro",
+      "price": 700,
+      "inventory": 5
+    },
+    {
+      "id": 4,
+      "title": "iphone 13 pro",
+      "price": 900,
+      "inventory": 6
+    },
+    {
+      "id": 5,
+      "title": "iphone 14 pro",
+      "price": 1000,
+      "inventory": 2
+    },
+    {
+      "id": 6,
+      "title": "iphone 11 pro",
+      "price": 1200,
+      "inventory": 9
+    },
+    {
+      "id": 7,
+      "title": "iphone 8 pro",
+      "price": 500,
+      "inventory": 10
+    }
+  ]
+}

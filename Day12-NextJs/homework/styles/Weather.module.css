@@ -1,0 +1,82 @@
+.wrapper {
+  width: 600px;
+  height: 300px;
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: 8px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 30px;
+}
+.formInput {
+  display: flex;
+  width: 100%;
+  padding: 5px 20px;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: relative;
+}
+.inputSearch {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #f6f6f6;
+  margin-top: 5px;
+  border: 1px solid #999;
+  transition: 0.25s ease;
+  outline: none;
+  margin-bottom: 10px;
+}
+.inputSearch:focus {
+  border-color: #56baed;
+}
+.lable {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 32px;
+  color: #999;
+  pointer-events: none;
+}
+.inputSearch:not(:placeholder-shown) + .lable,
+.inputSearch:focus + .lable {
+  display: inline-block;
+  padding: 0 10px;
+  top: 10px;
+  background-color: #fff;
+  border-radius: 12px;
+  transition: 0.25s ease;
+}
+.btnSearch {
+  background-color: #fff;
+  height: 50px;
+  margin-top: 10px;
+  margin-right: 25px;
+  padding: 5px 25px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  font-weight: 500;
+}
+.btnSearch:hover {
+  border: 1px solid #56baed;
+  color: #56baed;
+}
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.main .temp {
+  font-size: 30px;
+  font-weight: 500;
+}
